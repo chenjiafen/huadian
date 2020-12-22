@@ -1,0 +1,1200 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>鲜花网|花礼网-中国鲜花礼品网,鲜花速递网站,网上订花送花上门,同城鲜花快递网上花店</title>
+    <meta name="description" content="鲜花网,选花礼网(中国鲜花礼品网)-中国鲜花网领先品牌,专注鲜花速递服务15年,销量居鲜花礼品网站首位！鲜花网可24小时预订鲜花，同城送花、异地送花服务,网上订花后最快1-3小时即可将鲜花快递上门,送花网站覆盖中国2000多城市！">
+    <meta name="keywords" content="花礼网Hua.com,中国鲜花礼品网,鲜花,鲜花网,鲜花快递,网上订花送花,中国鲜花网,网上订花,送花网站">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,email=no,address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="m.hua.com">
+    <meta name="MobileOptimized" content="375">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <link rel="stylesheet" type="text/css" href="https://img02.hua.com/res/swiper/swiper-4.3.3.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://img02.hua.com/res/iconfont/iconfont.css" />
+    <link rel="stylesheet" type="text/css" href="https://img02.hua.com/m/home/css/m_home_20181107.css?1124" />
+    <style type="text/css">
+        @supports (bottom: env(safe-area-inset-bottom)) {
+            .tabbar {
+                padding-bottom: constant(safe-area-inset-bottom);
+                padding-bottom: env(safe-area-inset-bottom);
+            }
+        }
+        .product-item-info-prices {
+            opacity: 0;
+        }
+
+        .product-item-info-tags .tag-promo {
+            background-color: #FF734C;
+            color: #fff;
+        }
+    </style>
+    <!--Hua.com统计-->
+    <script type="text/javascript">
+        function getParameters(paramName) {
+            var returnValue = "";
+            var kv = location.search.slice(1).split("&");
+            for (var i = 0; i < kv.length; i++) {
+                var index = kv[i].indexOf("=");
+                if (index == -1) {
+                    continue;
+                }
+                var groupParam = kv[i].split("=")
+                if (groupParam[0] == paramName) {
+                    if (returnValue.length > 0) {
+                        returnValue = returnValue + "|" + groupParam[1];
+                    } else {
+                        returnValue = groupParam[1];
+                    }
+                }
+            }
+            return returnValue;
+        }
+        function isWeixin() { //判断是否是微信
+            var ua = navigator.userAgent.toLowerCase();
+            return ua.match(/MicroMessenger/i) == "micromessenger";
+        };
+        function isZhiFuBao() { //判断是否是支付宝
+            var ua = navigator.userAgent.toLowerCase();
+            return ua.match(/AlipayClient/i) == "alipayclient";
+        }
+        function isHideAppdl() {
+            if (getParameters("sid") == "huaweixxl" || isZhiFuBao()) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        (function () {
+            var locationUrl = location.href;
+            var refererUrl = document.referrer;
+            if (locationUrl.length > 300) {
+                locationUrl = locationUrl.substring(0, 300);
+            }
+            if (refererUrl.length > 200) {
+                refererUrl = refererUrl.substring(0, 200);
+            }
+            var apiurl = "/huactrler/hm?lt=" + (+new Date()) + "&sid=" + getParameters('sid') + "&u_id=" + getParameters('u_id') + "&huaPid=" + getParameters('huaPid');
+            apiurl = apiurl + "&url=" + encodeURIComponent(locationUrl) + "&urlreferer=" + encodeURIComponent(refererUrl);
+            var img = new Image;
+            img.onload = img.onerror = img.onabort = function () { }
+            img.src = apiurl;
+        })();
+    </script>
+    <!--百度统计-->
+    <script type="text/javascript">
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?ae896b60487020696d3df0e260c080bf";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+    <!--谷歌统计-->
+    <script type="text/javascript">
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({
+                'gtm.start': new Date().getTime(),
+                event: 'gtm.js'
+            });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src =
+                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-KS4PTHC');
+    </script>
+</head>
+<body>
+    <!--HeaderBar-->
+    <header class="headerbar">
+        <div class="headerbar-left">
+            <a href="/all.html">
+                <i class="iconfont iconfont-category"></i>
+            </a>
+        </div>
+        <div class="headerbar-logo"><img src="https://m.hua.com/content/vue/login/static/img/m_hualogo.png" /></div>
+        <div class="headerbar-right" id=onlineChat>
+                <div class="headerbar-right-kf active">
+                    <p class="iconfont iconfont-sevice"></p>
+                </div>
+            
+        </div>
+    </header>
+
+
+        <section class="product">
+            <h3 class="product-title">送恋人/爱情鲜花</h3>
+            <div class="product-list">
+                <!-- 粉玫瑰 -->
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9010966.html?huaPid=homepage-f101" class="navigation">
+                            <div class="product-item-pic"><img src="https://s3.ax1x.com/2020/12/22/rr51mQ.jpg" alt="春风十里" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">春风十里</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <!-- 限时抢购标签 tag-promo，同商品列表页  -->
+                                <p class="product-item-info-desc text-overflow ">33朵香槟玫瑰+桔梗</p>
+                                    <div class="product-item-info-tags">
+                                            <span class="tag-promo">33朵香槟玫瑰</span>
+                                    </div>
+                                <div class="product-item-info-promo">精心选材 精心设计</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-name text-overflow"><strong>¥198</strong> <s>¥315</s></p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9010966"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 蓝色妖姬 -->
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012471.html?huaPid=homepage-f102" class="navigation">
+                            <div class="product-item-pic"><img src="https://s3.ax1x.com/2020/12/22/rr5wXF.jpg" alt="给特别的她" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">给特别的她</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <!-- 限时抢购标签 tag-promo，同商品列表页  -->
+                                <p class="product-item-info-desc text-overflow ">33朵蓝色妖姬</p>
+                                    <div class="product-item-info-tags">
+                                            <span class="tag-promo">33枝热销款</span>
+                                    </div>
+                                <div class="product-item-info-promo">33枝新品 送给特别的她</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-name text-overflow"><strong>¥198</strong>  <s>¥315</s></p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012471"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--向日葵  -->
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9010855.html?huaPid=homepage-f103" class="navigation">
+                            <div class="product-item-pic"><img src="https://s3.ax1x.com/2020/12/22/rr5tf0.jpg" alt="用心爱你" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">用心爱你</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <!-- 限时抢购标签 tag-promo，同商品列表页  -->
+                                <p class="product-item-info-desc text-overflow-line2 ">6du＋66枝红玫瑰</p>
+                                <div class="product-item-info-promo">与你相守，直到天荒地老</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9010855"><strong>¥599</strong><s>¥869</s></p>
+                                        <p class="product-item-info-sales">已销售3.6万件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9010855"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 一路向阳 -->
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012450.html?huaPid=homepage-f104" class="navigation">
+                            <div class="product-item-pic"><img src="https://s3.ax1x.com/2020/12/22/rrRkcQ.jpg" alt="韩式系列/初心不负" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">韩式系列/初心不负</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <!-- 限时抢购标签 tag-promo，同商品列表页  -->
+                                <p class="product-item-info-desc text-overflow "> 韩式花束系列花艺师全新打造，卡罗拉玫瑰11枝、白底粉边洋桔梗5枝、大叶尤加利10枝</p>
+                                    <div class="product-item-info-tags">
+                                            <span class="tag-promo">全新韩式系列</span>
+                                    </div>
+                                <div class="product-item-info-promo">花艺师打造 韩式花束系列</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012450"><strong>¥228</strong><s>¥298</s></p>
+                                        <p class="product-item-info-sales">已销售7.4万件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012450"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- 永不凋零的爱 -->
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012243.html?huaPid=homepage-f105" class="navigation">
+                            <div class="product-item-pic"><img src="https://s3.ax1x.com/2020/12/22/rr5I7d.jpg" alt="恋恋情深" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">恋恋情深</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <!-- 限时抢购标签 tag-promo，同商品列表页  -->
+                                <p class="product-item-info-desc text-overflow-line2 ">11枝香槟玫瑰，白色多头百合2枝</p>
+                                <div class="product-item-info-promo">经典款式 简约设计</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012243"><strong>¥198</strong><s>¥255</s></p>
+                                        <p class="product-item-info-sales">已销售8.0万件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012243"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- 长长久久 -->
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012177.html?huaPid=homepage-f106" class="navigation">
+                            <div class="product-item-pic"><img src="https://s3.ax1x.com/2020/12/22/rr5xBQ.jpg" alt="不变的承诺" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">不变的承诺</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <!-- 限时抢购标签 tag-promo，同商品列表页  -->
+                                <p class="product-item-info-desc text-overflow ">99枝红玫瑰</p>
+                                    <div class="product-item-info-tags">
+                                            <span class="tag-promo">经典99枝</span>
+                                    </div>
+                                <div class="product-item-info-promo">经典99枝，鼎力推荐！</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012177"><strong>¥599</strong><s>¥869</s></p>
+                                        <p class="product-item-info-sales">已销售6.8万件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012177"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                        <!-- 只钟情你一人 -->
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012473.html?huaPid=homepage-f107" class="navigation">
+                            <div class="product-item-pic"><img src="https://s3.ax1x.com/2020/12/22/rrI3jO.jpg" alt="韩式系列/你笑起来真好看" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">韩式系列/你笑起来真好看</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <!-- 限时抢购标签 tag-promo，同商品列表页  -->
+                                <p class="product-item-info-desc text-overflow ">艾莎玫瑰19枝</p>
+                                    <div class="product-item-info-tags">
+                                            <span class="tag-promo">全新爱莎玫瑰</span>
+                                    </div>
+                                <div class="product-item-info-promo">全新韩式系列 珍品玫瑰</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012473"><strong>¥298</strong><s>¥398</s></p>
+                                        <p class="product-item-info-sales">已销售1819件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012473"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            <div class="product-more">
+                <a href="/aiqingxianhua/" class="product-more-btn">查看更多</a>
+            </div>
+        </section>
+    <!--Product Friend-->
+
+        <section class="product">
+            <h3 class="product-title">送长辈鲜花</h3>
+            <div class="product-list">
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012452.html?huaPid=homepage-f201" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/9012452.jpg_220x240.jpg" alt="韩式系列/一路向阳" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">韩式系列/一路向阳</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-desc text-overflow ">向日葵3枝、香槟玫瑰9枝、橙色多头玫5枝、黄色腊梅5枝、大叶尤加利5枝</p>
+                                    <div class="product-item-info-tags">
+                                            <span>全新韩式系列</span>
+                                    </div>
+                                <div class="product-item-info-promo">花艺师打造 韩式花束系列</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012452"><strong>¥296</strong><s>¥398</s></p>
+                                        <p class="product-item-info-sales">已销售6.9万件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012452"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012189.html?huaPid=homepage-f202" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/9012189.jpg_220x240.jpg" alt="恩情无限" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">恩情无限</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-desc text-overflow ">粉色康乃馨11枝，百合2枝</p>
+                                    <div class="product-item-info-tags">
+                                            <span>人气推荐</span>
+                                    </div>
+                                <div class="product-item-info-promo">精选花材 精心设计</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012189"><strong>¥178</strong><s>¥232</s></p>
+                                        <p class="product-item-info-sales">已销售1.6万件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012189"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012461.html?huaPid=homepage-f203" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/9012461.jpg_220x240.jpg" alt="韩式系列/温柔以待" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">韩式系列/温柔以待</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-desc text-overflow ">粉色康乃馨13枝，戴安娜玫瑰5枝、粉色洋桔梗5枝、浅紫紫罗兰5枝、尤加利10枝</p>
+                                    <div class="product-item-info-tags">
+                                            <span>全新韩式系列</span>
+                                    </div>
+                                <div class="product-item-info-promo">花艺师打造 韩式系列</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012461"><strong>¥239</strong><s>¥319</s></p>
+                                        <p class="product-item-info-sales">已销售5899件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012461"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012204.html?huaPid=homepage-f204" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/9012204.jpg_220x240.jpg" alt="幸福万年长" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">幸福万年长</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-desc text-overflow ">红色康乃馨66枝，白边紫色多头康乃馨15枝，栀子叶2扎</p>
+                                    <div class="product-item-info-tags">
+                                            <span>精品优选</span>
+                                    </div>
+                                <div class="product-item-info-promo">温暖花束 幸福万年长</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012204"><strong>¥346</strong><s>¥486</s></p>
+                                        <p class="product-item-info-sales">已销售4106件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012204"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012092.html?huaPid=homepage-f205" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/9012092.jpg_220x240.jpg" alt="母爱" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">母爱</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-desc text-overflow "> 玫红色康乃馨9枝，粉色多头康乃馨10枝</p>
+                                    <div class="product-item-info-tags">
+                                            <span>母亲最爱</span>
+                                    </div>
+                                <div class="product-item-info-promo">红粉搭配  花色明艳</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012092"><strong>¥162</strong><s>¥228</s></p>
+                                        <p class="product-item-info-sales">已销售2.0万件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012092"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-horizontal">
+                        <a href="/product/9012462.html?huaPid=homepage-f206" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/9012462.jpg_220x240.jpg" alt="韩式花篮/平淡岁月" /></div>
+                            <div class="product-item-info">
+                                <p class="product-item-info-name text-overflow">韩式花篮/平淡岁月</p>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-desc text-overflow ">苏醒玫瑰13枝，蓝紫色绣球1枝，香槟洋桔梗5枝</p>
+                                    <div class="product-item-info-tags">
+                                            <span>韩式新品</span>
+                                    </div>
+                                <div class="product-item-info-promo">韩式花篮系列</div>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="9012462"><strong>¥286</strong><s>¥375</s></p>
+                                        <p class="product-item-info-sales">已销售1645件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="9012462"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="product-more">
+                <a href="/songzhangbeixianhua/" class="product-more-btn">查看更多</a>
+            </div>
+        </section>
+    <!--Product PPF-->
+
+        <section class="product">
+            <h3 class="product-title">永生花推荐</h3>
+            <div class="product-list product-list-vertical">
+
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1073301.html?huaPid=homepage-f301" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1073301.jpg_220x240.jpg" alt="心形礼盒/迪奥口红520+999+花漾香水30ml" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>经典口红香水款</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">心形礼盒/迪奥口红520+999+花漾香水30ml·专柜正品 2支经典色号口红+迪奥小姐花漾淡香水礼盒</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1073301"><strong>¥1699</strong><s>¥1799</s></p>
+                                        <p class="product-item-info-sales">已销售9件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1073301"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1073264.html?huaPid=homepage-f302" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1073264.jpg_220x240.jpg" alt="一鹿(路)有你永生花小夜灯" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>创意新品</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">一鹿(路)有你永生花小夜灯·永生花礼盒</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1073264"><strong>¥288</strong><s>¥388</s></p>
+                                        <p class="product-item-info-sales">已销售1120件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1073264"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1073155.html?huaPid=homepage-f303" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1073155.jpg_220x240.jpg" alt="Be My Love" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>热卖推荐</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">Be My Love· 厄瓜多尔进口红色永生玫瑰2枝，进口白色永生玫瑰1枝，棉花2朵，粉色珍珠5颗</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1073155"><strong>¥398</strong><s>¥598</s></p>
+                                        <p class="product-item-info-sales">已销售2944件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1073155"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1073185.html?huaPid=homepage-f304" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1073185.jpg_220x240.jpg" alt="我如此爱你-口红款999" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>畅销单品</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">我如此爱你-口红款999·专柜正品Dior#999口红＋进口永生玫瑰礼盒</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1073185"><strong>¥639</strong><s>¥699</s></p>
+                                        <p class="product-item-info-sales">已销售7278件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1073185"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="product-more">
+                <a href="/yongshenghua/" class="product-more-btn">查看更多</a>
+            </div>
+        </section>
+    <!--Product Cake-->
+    <!--Product PPF-->
+
+        <section class="product">
+            <h3 class="product-title">蛋糕推荐</h3>
+            <div class="product-list product-list-vertical">
+
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/5241035.html?huaPid=homepage-f401" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/5241035.jpg_220x240.jpg" alt="圣诞限定&#183;旋转木马（4.5寸）" /></div>
+                            <div class="product-item-info">
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow-line2 ">圣诞限定&#183;旋转木马（4.5寸）·</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="5241035"><strong>¥238</strong><s>¥338</s></p>
+                                        <p class="product-item-info-sales">已销售91件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="5241035"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/5371015.html?huaPid=homepage-f402" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/5371015.jpg_220x240.jpg" alt="圣诞麋鹿蛋糕（6寸/2磅）" /></div>
+                            <div class="product-item-info">
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow-line2 ">圣诞麋鹿蛋糕（6寸/2磅）·乳酪芝士蛋糕</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="5371015"><strong>¥299</strong><s>¥399</s></p>
+                                        <p class="product-item-info-sales">已销售0件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="5371015"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/5221035.html?huaPid=homepage-f403" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/5221035.jpg_220x240.jpg" alt="深爱（1磅）+方形蜡烛" /></div>
+                            <div class="product-item-info">
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow-line2 ">深爱（1磅）+方形蜡烛·水果夹层蛋糕</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="5221035"><strong>¥276</strong><s>¥376</s></p>
+                                        <p class="product-item-info-sales">已销售491件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="5221035"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/5602016.html?huaPid=homepage-f404" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/5602016.jpg_220x240.jpg" alt="四重奏蛋糕(约2磅)" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>生日推荐</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">四重奏蛋糕(约2磅)·方形/巧克力/榴莲/慕斯蛋糕</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="5602016"><strong>¥228</strong><s>¥296</s></p>
+                                        <p class="product-item-info-sales">已销售4964件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="5602016"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="product-more">
+                <a href="https://m.hua.com/cake/" class="product-more-btn">查看更多</a>
+            </div>
+        </section>
+    <!--Product Gift-->
+
+        <section class="product">
+            <h3 class="product-title">礼品推荐</h3>
+            <div class="product-list product-list-vertical">
+
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1087046.html?huaPid=homepage-f501" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1087046.jpg_220x240.jpg" alt="GOC IN C兔子熊热水袋暖手宝/蓝色" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>暖冬系列新品</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">GOC IN C兔子熊热水袋暖手宝/蓝色·联名DUEPLAY 兔子熊暖手宝 充电式安全防爆</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1087046"><strong>¥258</strong><s>¥358</s></p>
+                                        <p class="product-item-info-sales">已销售102件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1087046"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1087047.html?huaPid=homepage-f502" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1087047.jpg_220x240.jpg" alt="素乐暖手宝-希望/粉色" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>暖冬系列新品</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">素乐暖手宝-希望/粉色·暖手、充电宝、照明多功能</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1087047"><strong>¥119</strong><s>¥159</s></p>
+                                        <p class="product-item-info-sales">已销售166件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1087047"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1076113.html?huaPid=homepage-f503" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1076113.jpg_220x240.jpg" alt="施华洛世奇One浪漫心形项链/红" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>专柜款7.8折</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">施华洛世奇One浪漫心形项链/红·Swarovski浪漫心形项链</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1076113"><strong>¥999</strong><s>¥1290</s></p>
+                                        <p class="product-item-info-sales">已销售31件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1076113"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1071004.html?huaPid=homepage-f504" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1071004.jpg_220x240.jpg" alt="苹果型3D水晶内雕" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>圣诞节送平安</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">苹果型3D水晶内雕·“一路上有你”激光内雕水晶工艺品，七彩发光</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1071004"><strong>¥138</strong><s>¥188</s></p>
+                                        <p class="product-item-info-sales">已销售2219件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1071004"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="product-more">
+                <a href="https://m.hua.com/gifts/" class="product-more-btn">查看更多</a>
+            </div>
+        </section>
+    <!--Product Chocolate-->
+
+        <section class="product">
+            <h3 class="product-title">巧克力推荐</h3>
+            <div class="product-list product-list-vertical">
+
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1207009.html?huaPid=homepage-f601" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1207009.jpg_220x240.jpg" alt="巧克巧蔻定制9粒装手工夹心巧克力" /></div>
+                            <div class="product-item-info">
+                                    <div class="product-item-info-tags">
+                                            <span>畅销爆款</span>
+                                    </div>
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow ">巧克巧蔻定制9粒装手工夹心巧克力·手工夹心巧克力</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1207009"><strong>¥162</strong><s>¥262</s></p>
+                                        <p class="product-item-info-sales">已销售3442件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1207009"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1204067.html?huaPid=homepage-f602" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1204067.jpg_220x240.jpg" alt="LAUENSTEIN城堡巧克力百年城堡雕花礼盒" /></div>
+                            <div class="product-item-info">
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow-line2 ">LAUENSTEIN城堡巧克力百年城堡雕花礼盒·雕花礼盒巧克力</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1204067"><strong>¥209</strong><s>¥309</s></p>
+                                        <p class="product-item-info-sales">已销售39件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1204067"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1204066.html?huaPid=homepage-f603" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1204066.jpg_220x240.jpg" alt="LAUENSTEIN城堡巧克力圣诞限定日历书" /></div>
+                            <div class="product-item-info">
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow-line2 ">LAUENSTEIN城堡巧克力圣诞限定日历书·圣诞限定巧克力</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1204066"><strong>¥398</strong><s>¥498</s></p>
+                                        <p class="product-item-info-sales">已销售18件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1204066"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="product-item product-item-vertical">
+                        <a href="/product/1207087.html?huaPid=homepage-f604" class="navigation">
+                            <div class="product-item-pic"><img src="https://img01.hua.com/uploadpic/newpic/1207087.jpg_220x240.jpg" alt="巧克巧蔻 圣诞彩球巧克力十二颗礼盒130g" /></div>
+                            <div class="product-item-info">
+                                <!--Dev:: text-overflow Or text-overflow-line2-->
+                                <p class="product-item-info-name  text-overflow-line2 ">巧克巧蔻 圣诞彩球巧克力十二颗礼盒130g·圣诞礼盒</p>
+                                <div class="product-item-info-bottom">
+                                    <div class="product-item-info-bottom-left">
+                                        <p class="product-item-info-prices" data-id="1207087"><strong>¥258</strong><s>¥358</s></p>
+                                        <p class="product-item-info-sales">已销售1815件</p>
+                                    </div>
+                                    <div class="product-item-info-bottom-right" data-id="1207087"><i class="iconfont iconfont-buy"></i></div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+            </div>
+            <div class="product-more">
+                <a href="https://m.hua.com/gifts/Chocolates/" class="product-more-btn">查看更多</a>
+            </div>
+        </section>
+    <!--Enterprise group purchase-->
+
+    <section class="qiyetuangou">
+        <a href="/qiyetuangou/" class="navigation"><img src="https://img02.hua.com/m/home/img/m_home_qiyetuangou.png" /></a>
+    </section>
+    <!--Company brand advantage-->
+    <section class="brand">
+        <h3 class="brand-title">为什么选择我们</h3>
+        <div class="brand-list">
+            <div class="brand-item">
+                <img src="https://img02.hua.com/m/pro_detail/m_details_brand_01.png" alt="获评鲜花龙头企业" />
+                <p>获评鲜花龙头企业</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://img02.hua.com/m/pro_detail/m_details_brand_02.png" alt="1~3小时送花上门" />
+                <p>1~3小时送花上门</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://img02.hua.com/m/pro_detail/m_details_brand_03.png" alt="赛事冠军花艺师团队" />
+                <p>赛事冠军花艺师团队</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://img02.hua.com/m/pro_detail/m_details_brand_04.png" alt="严选花材" />
+                <p>严选花材</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://img02.hua.com/m/pro_detail/m_details_brand_05.png" alt="12道严苛品控标准" />
+                <p>12道严苛品控标准</p>
+            </div>
+            <div class="brand-item">
+                <img src="https://img02.hua.com/m/pro_detail/m_details_brand_06.png" alt="500万用户信赖好评" />
+                <p>500万用户信赖好评</p>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer class="footer">
+        <div class="footer-links" style="padding-bottom:1rem;">
+            <a class="footer-links-item" href="/qiyetuangou/" title="企业团购">企业团购</a>
+            <a class="footer-links-item" href="/you/" title="设计师款">设计师款</a>
+            <a class="footer-links-item" href="/huadian/" title="同城鲜花">同城鲜花</a>
+            <a class="footer-links-item" href="/huayu/" title="花语大全">花语大全</a>
+        </div>
+        <div class="footer-links" style="padding-top:0;">
+            <a class="footer-links-item" href="/profile/why_choose_us.htm" title="花礼优势">花礼优势</a>
+            <a class="footer-links-item" href="/yongganai/" title="勇敢爱">勇敢爱</a>
+            <a class="footer-links-item" href="/help/listfaq/" title="常见问题">常见问题</a>
+            <a class="footer-links-item" href="/profile/about.htm" title="关于我们">关于我们</a>
+        </div>
+        <div class="footer-entry">
+            <div class="footer-entry-item footer-entry-item-appdl">
+                <a href="/mbzzy/" class="navigation">
+                    <i class="iconfont iconfont-iphone"></i>
+                    <p>客户端</p>
+                </a>
+            </div>
+            <div class="footer-entry-item">
+                <a href="/chat/" class="navigation">
+                    <i class="iconfont iconfont-sevice"></i>
+                    <p>客服</p>
+                </a>
+            </div>
+        </div>
+        <p class="footer-copyright">Copyright &copy; 2005~2020 花礼网（中国鲜花礼品网）版权所有<br>中国鲜花网领先品牌，鲜花速递专家！<br>深圳市百易信息技术有限公司  粤ICP备09171662号</p>
+        <span id="animationElement" class="cart-elemnt"></span>
+    </footer>
+    <div class="scrollbox" id="scrollbox">
+        <div class="scrollbox-item" id="scrollbox-goTop"><i class="iconfont iconfont-top"></i></div>
+    </div>
+    <!--Tabbar-->
+    <nav class="tabbar">
+        <div class="tabbar-item active">
+            <a href="/" class="navigation">
+                <i class="iconfont iconfont-home"></i>
+                <p>首页</p>
+            </a>
+        </div>
+        <div class="tabbar-item">
+            <a href="/all.html" class="navigation">
+                <i class="iconfont iconfont-category"></i>
+                <p>分类</p>
+            </a>
+        </div>
+        <div class="tabbar-item" data>
+            <a href="/Shopping/ShowCart" class="navigation">
+                <i class="iconfont iconfont-shopcart" id="cartCount"></i>
+                <p>购物车</p>
+            </a>
+        </div>
+        <div class="tabbar-item">
+            <a href="/member/membercenter" class="navigation">
+                <i class="iconfont iconfont-smile"></i>
+                <p>我的</p>
+            </a>
+        </div>
+    </nav>
+    <!--Script-->
+    <script src="https://img02.hua.com/js/jquery-3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://img02.hua.com/res/swiper/swiper-4.3.3.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://img02.hua.com/res/exposure/exposure.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        /**
+         * js抛物线动画
+         * param  {[object]} origin [起点元素]
+         * param  {[object]} target [目标点元素]
+         * param  {[object]} element [要运动的元素]
+         * param  {[number]} a [抛物线弧度]
+         * param  {[number]} time [动画执行时间]
+         * param  {[function]} callback [抛物线执行完成后回调]
+         */
+        var Parabola = function (config) {
+            var b = 0,
+                INTERVAL = 15,
+                timer = null,
+                x1, y1, x2, y2, originx, originy, diffx, diffy;
+            this.config = config || {};
+            this.origin = $(this.config.origin) || null;
+            this.target = $(this.config.target) || null;
+            this.element = $(this.config.element) || null;
+            this.a = this.config.a || 0.004;
+            this.time = this.config.time || 1000;
+
+            this.init = function () {
+                x1 = this.origin.offset().left;
+                y1 = this.origin.offset().top;
+                x2 = this.target.offset().left;
+                y2 = this.target.offset().top;
+                originx = x1;
+                originy = y1;
+                diffx = x2 - x1;
+                diffy = y2 - y1;
+                speedx = diffx / this.time;
+                b = (diffy - this.a * diffx * diffx) / diffx;
+                this.element.css({
+                    left: x1,
+                    top: y1
+                })
+                return this;
+            }
+            this.moveStyle = function () {
+                var moveStyle = 'position',
+                    testDiv = document.createElement('div');
+                if ('placeholder' in testDiv) {
+                    ['', 'ms', 'moz', 'webkit'].forEach(function (pre) {
+                        var transform = pre + (pre ? 'T' : 't') + 'ransform';
+                        if (transform in testDiv.style) {
+                            moveStyle = transform;
+                        }
+                    })
+                }
+                return moveStyle;
+            }
+
+            this.move = function () {
+                var start = new Date().getTime(),
+                    moveStyle = this.moveStyle(),
+                    _this = this;
+                timer = setInterval(function () {
+                    if (new Date().getTime() - start > _this.time) {
+                        clearInterval(timer);
+                        _this.element.css({
+                            left: x2,
+                            top: y2
+                        })
+                        typeof _this.config.callback === 'function' && _this.config.callback(_this.element);
+                        return;
+                    }
+                    x = speedx * (new Date().getTime() - start);
+                    y = _this.a * x * x + b * x;
+                    if (moveStyle === 'position') {
+                        _this.element.css({
+                            left: x + originx,
+                            top: y + originy
+                        })
+                    } else {
+                        if (window.requestAnimationFrame) {
+                            window.requestAnimationFrame(_this.element[0].style[moveStyle] = 'translate(' + x + 'px,' + y + 'px)');
+                        } else {
+                            _this.element[0].style[moveStyle] = 'translate(' + x + 'px,' + y + 'px)';
+                        }
+                    }
+                }, INTERVAL)
+                return this;
+            }
+            this.init();
+        }
+    </script>
+    <script type="text/javascript">
+        function gotoApp() {
+            window.location.href = "comhuaorder://";//打开app首页
+            window.setTimeout(function () {
+                window.location.href = "/mbzzy/?from=home"; //打开h5下载页
+            },1000)
+        }
+        var FirstOrderStatus;
+        $(function () {
+
+            // VIP在线客服
+            $('#onlineChat').click(function () {
+                if (typeof _MEIQIA == 'function') {
+                    _MEIQIA('showPanel');
+                }
+            });
+          
+            /**
+             * description 同步数据
+             */
+            function commit() {
+                // 同步首页数据
+                $.post('/home/indexdatas', { sid: getParameters('sid') }).done(function (res) {
+                    FirstOrderStatus = res.Datas.FirstOrderStatus;
+                    if (res.Status == 0) {
+                        $('#commentCount').text(res.Datas.CommentCount);
+                        if (res.Datas.GwcCount && res.Datas.GwcCount > 0) {
+                            $('#cartCount').attr('data-cartnum', res.Datas.GwcCount);
+                        }
+                        if (res.Datas.IsLogin) {
+                            $('.headerbar-right-user').addClass('active');
+                        } else {
+                            $('.headerbar-right-login').addClass('active');
+                        }
+
+                        
+                    }
+                });
+            }
+            commit();
+            /**
+             * description 首屏价格同步
+             * param {String} selector class选择器,目标为价格所在标签
+             * param {Boolean} isYen 是否显示人民币符号，默认为true
+             */
+            function commitPrice(selector) {
+                var isYen =
+                    arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+                var $elPrices = $(selector);
+                var pids = [];
+                $elPrices.map(function (index, el) {
+                    pids[pids.length] = el.getAttribute("data-id");
+                });
+                $.post("/home/GetProductListPrice", {
+                    itemcodes: pids.join(",")
+                }).done(function (res) {
+                    if (res.DataStatus == 200 && res.Status == '0') {
+                        if (res.Datas.ProductPrices.length == 0) {
+                            return false;
+                        }
+                        for (var i = 0, len = res.Datas.ProductPrices.length; i < len; i++) {
+                            var temp = res.Datas.ProductPrices[i];
+                            $elPrices.filter("[data-id=" + temp.ItemCode + "]").html("<strong>¥" + temp.Price + "</strong><s>¥" + temp.LinePrice + "</s>").css("opacity", 1);
+                        }
+                    } else {
+                        if (res.Datas && res.Datas.Messages) {
+                            huatools.showToast(res.Datas.Message);
+                        }
+                    }
+                });
+            }
+            commitPrice(".product-item-info-prices[data-id]");
+            function tejiaPrice(selector) {
+                var isYen =
+                    arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+                var $elPrices = $(selector);
+                var pids = [];
+                $elPrices.map(function (index, el) {
+                    pids[pids.length] = el.getAttribute("data-id");
+                });
+                $.post("/home/GetProductListPrice", {
+                    itemcodes: pids.join(",")
+                }).done(function (res) {
+                    if (res.DataStatus == 200 && res.Status == '0') {
+                        if (res.Datas.ProductPrices.length == 0) {
+                            return false;
+                        }
+                        for (var i = 0, len = res.Datas.ProductPrices.length; i < len; i++) {
+                            var temp = res.Datas.ProductPrices[i];
+                            $elPrices.filter("[data-id=" + temp.ItemCode + "]").html("¥" + temp.Price + "<s>¥" + temp.LinePrice + "</s>").css("opacity", 1);
+                        }
+                    } else {
+                        if (res.Datas && res.Datas.Messages) {
+                            huatools.showToast(res.Datas.Message);
+                        }
+                    }
+                });
+            }
+            tejiaPrice(".scene-item-bottom-text[data-id]");
+            function middlePrice(selector) {
+                var isYen =
+                    arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+                var $elPrices = $(selector);
+                var pids = [];
+                $elPrices.map(function (index, el) {
+                    pids[pids.length] = el.getAttribute("data-id");
+                });
+                $.post("/home/GetProductListPrice", {
+                    itemcodes: pids.join(","),
+                    type:"xmas",
+                }).done(function (res) {
+                    if (res.DataStatus == 200 && res.Status == '0') {
+                        if (res.Datas.ProductPrices.length == 0) {
+                            return false;
+                        }
+                        for (var i = 0, len = res.Datas.ProductPrices.length; i < len; i++) {
+                            var temp = res.Datas.ProductPrices[i];
+                            $elPrices.filter("[data-id=" + temp.ItemCode + "]").html("¥" + temp.Price);
+                        }
+                    } else {
+                        if (res.Datas && res.Datas.Messages) {
+                            huatools.showToast(res.Datas.Message);
+                        }
+                    }
+                });
+            }
+            if ($(".festival-item-price").length > 0) {
+                middlePrice(".festival-item-price[data-id]");
+            }
+
+            //  ==========
+            //  = SwiperBanner =
+            //  ==========
+            var mainBanner = new Swiper('#mainSwiper', {
+                loop: true,
+                autoplay: {
+                    delay: 3500,
+                    disableOnInteraction: false,
+                },
+                observer: true,
+                observeParents: true,
+                pagination: {
+                    el: '#mainSwiper>.swiper-pagination',
+                },
+            });
+            // 如果只有一个slide就销毁swiper
+            if (mainBanner.slides.length <= 3) {
+                mainBanner.destroy();
+            }
+            // 首页产品曝光率统计
+            var exprosure = new Exprosure(".product-list>.product-item", {
+                url: "/Huactrler/GoodsExposure",
+                offsetBottom: 50
+            });
+            // 滚动监听
+            var $scrollBox = $('#scrollbox');
+            $('#scrollbox-goTop').click(function () {
+                $("html,body").animate({
+                    scrollTop: 0
+                }, 300);
+            });
+            $(document).scroll(function () {
+                var top = $(this).scrollTop();
+                if (top >= window.screen.height) {
+                    $scrollBox.show();
+                } else {
+                    $scrollBox.hide();
+                }
+            });
+            // TopBanner
+            if (sessionStorage.getItem('homeTopBannerHide') != 1) {
+                $('#topBannner').show();
+            }
+            $('#topBannnerClose').click(function () {
+                sessionStorage.setItem('homeTopBannerHide', 1);
+                $('#topBannner').hide();
+            });
+            var sid = getParameters('sid');
+            if (sid == "m_gat") {
+                $("#topBannner").hide();
+                sessionStorage.setItem('homeTopBannerHide', 1);
+            }
+            // 加入购物车
+            $('.product-item-info-bottom-right[data-id]').click(function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                var itemcode = $(this).data('id');
+                if (itemcode == '') {
+                    return false;
+                }
+                // 加购动画
+                var parabola = new Parabola({
+                    origin: this,
+                    target: '#cartCount',
+                    element: '#animationElement',
+                    time: 600,
+                    a: 0.05,
+                    callback: function () {
+                        $('#animationElement').hide();
+                        commit();
+                    }
+                });
+                $.post('/shopping/addtocart/', {
+                    itemCode: itemcode,
+                    num: 1,
+                    jump: 'no'
+                }).done(function (res) {
+                    if (res.Status == '0' && res.DataStatus == 0) {
+                        $('#animationElement').show();
+                        parabola.move();
+                    }
+                }).fail(function (err) {
+                    console.log(err.status + ':' + err.statusText);
+                });
+            });
+            //微信公众号隐藏新人礼包
+            if (isWeixin()) {
+                $('#topBannner').hide();
+            }
+            // 判断参数隐藏客户端下载
+            if (isHideAppdl()) {
+                $('#topBannner').hide();
+                $(".footer-entry-item-appdl").remove();
+            }
+        });
+    </script>
+    <script type='text/javascript'>
+        (function (m, ei, q, i, a, j, s) {
+            m[i] = m[i] || function () {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            j = ei.createElement(q),
+                s = ei.getElementsByTagName(q)[0];
+            j.async = true;
+            j.charset = 'UTF-8';
+            j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+            s.parentNode.insertBefore(j, s);
+        })(window, document, 'script', '_MEIQIA');
+        _MEIQIA('entId', '111117');
+        $.post("/Home/MeiQiaVisitLog", null, function (data) {
+            _MEIQIA('clientId', data);
+        });
+        _MEIQIA('manualInit');
+        _MEIQIA('withoutBtn');
+        // 载入页面，初始化前，隐藏客服框
+        _MEIQIA('allSet', function () {
+            _MEIQIA('hidePanel');
+        });
+        _MEIQIA('init');
+    </script>
+</body>
+</html>
